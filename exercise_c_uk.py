@@ -45,12 +45,13 @@ for country in united_kingdom:
 
 # 4. Use a loop to find the total population of the UK.
 
-Could not get the answer 
-#  #counter = 0 
+total_population = 0
 
-# for amount in united_kingdom:
-#     amount["population"]
-
+for amount in united_kingdom:
+  total_population += amount["population"]
 
 
-# print(amount["population"])
+print(total_population)  
+
+
+
