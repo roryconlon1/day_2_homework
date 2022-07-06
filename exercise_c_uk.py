@@ -27,6 +27,7 @@ united_kingdom = [
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
 
 united_kingdom[1][2] = "Cardiff"
+# united_kingdom[1][""capital"] = "Cardiff"
 
 # 2. Create a dictionary for Northern Ireland and add it to the `united_kingdom` list (The capital is Belfast, and the population is 1,811,000).
 
@@ -35,8 +36,10 @@ Northern_Ireland = {
   "population" : 1811000,
   "capital" : "Belfast"
   } 
-dictionary_copy = Northern_Ireland.copy()
+dictionary_copy = Northern_Ireland.copy()  # i think thats basically pointless
 united_kingdom.append(dictionary_copy)
+
+#united_kingdom.append(northern_ireland)
 
 # 3. Use a loop to print the names of all the countries in the UK.
 
@@ -48,10 +51,12 @@ for country in united_kingdom:
 total_population = 0
 
 for amount in united_kingdom:
-  total_population += amount["population"]
+  total_population += amount["population"] # its adding each amount and for amount its using the "population" to target just that
 
 
 print(total_population)  
+
+
 
 
 
